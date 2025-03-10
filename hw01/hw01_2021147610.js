@@ -13,6 +13,25 @@ canvas.height = 500;
 let width = canvas.width/2;
 let height = canvas.height/2;
 gl.viewport(0, 0, width, height);
+gl.enable(gl.SCISSOR_TEST);
+gl.scissor(0, 0, width, height);
+gl.clearColor(0.0, 0.0, 1.0, 1.0);
+gl.clear(gl.COLOR_BUFFER_BIT);  
+
+gl.scissor(width, 0, width, height);
+gl.clearColor(1.0, 1.0, 0.0, 1.0);
+gl.clear(gl.COLOR_BUFFER_BIT);  
+
+gl.scissor(0, height, width, height);
+gl.clearColor(1.0, 0.0, 0.0, 1.0);
+gl.clear(gl.COLOR_BUFFER_BIT);  
+
+gl.viewport(width, height, width, height);
+gl.scissor(width, height, width, height);
+gl.clearColor(0.0, 1.0, 0.0, 1.0);
+gl.clear(gl.COLOR_BUFFER_BIT);  
+
+gl.disable(gl.SCISSOR_TEST);
 
 render();
 
