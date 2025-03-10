@@ -37,10 +37,10 @@ function render() {
 }
 
 // Resize viewport when window size changes
-// window.addEventListener('resize', () => {
-//     canvas.width = Math.min(window.innerWidth, window.innerHeight);
-//     canvas.height = Math.min(window.innerHeight, window.innerWidth);
-//     gl.viewport(0, 0, canvas.width, canvas.height);
-//     render();
-// });
+window.addEventListener('resize', () => {
+    canvas.width = Math.min(window.innerWidth, window.innerHeight);
+    canvas.height = Math.min(window.innerHeight, window.innerWidth);
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    render();
+});
 
