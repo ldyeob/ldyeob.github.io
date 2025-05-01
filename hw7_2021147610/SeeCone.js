@@ -10,12 +10,17 @@
     - 'f' to switch to flat shading
 - Applying Diffuse & Specular reflection using Flat/Smooth shading to the cylinder
 ----------------------------------------------------------------------------------*/
-import { resizeAspectRatio, setupText, updateText} from '../util/util.js';
-import { Shader, readShaderFile } from '../util/shader.js';
-import { Cube } from '../util/cube.js';
-import { Arcball } from '../util/arcball.js';
-import { Cone } from './cone.js';
+// import { resizeAspectRatio, setupText, updateText} from '../util/util.js';
+// import { Shader, readShaderFile } from '../util/shader.js';
+// import { Cube } from '../util/cube.js';
+// import { Arcball } from '../util/arcball.js';
+// import { Cone } from './cone.js';
 
+import { resizeAspectRatio, setupText, updateText} from '/hw7_2021147610/util/util.js';
+import { Shader, readShaderFile } from '/hw7_2021147610/util/shader.js';
+import { Cube } from '/hw7_2021147610/util/cube.js';
+import { Arcball } from '/hw7_2021147610/util/arcball.js';
+import { Cone } from '/hw7_2021147610/cone.js';
 
 const canvas = document.getElementById('glCanvas');
 const gl = canvas.getContext('webgl2');
