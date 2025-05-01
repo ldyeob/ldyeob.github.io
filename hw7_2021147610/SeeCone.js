@@ -15,7 +15,7 @@ import { Shader, readShaderFile } from '../util/shader.js';
 import { Cube } from '../util/cube.js';
 import { Arcball } from '../util/arcball.js';
 // import { Cone } from './cone.js';
-import { Cone } from './hw7_2021147610/cone.js';
+import { Cone } from '/hw7_2021147610/cone.js';
 
 
 const canvas = document.getElementById('glCanvas');
