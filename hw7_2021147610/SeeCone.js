@@ -12,8 +12,8 @@
 ----------------------------------------------------------------------------------*/
 import { resizeAspectRatio, setupText, updateText} from './util/util.js';
 import { Shader, readShaderFile } from './util/shader.js';
-import { Cube } from './util/cube.js';
-import { Arcball } from './util/arcball.js';
+import { Cube } from '../util/cube.js';
+import { Arcball } from '../util/arcball.js';
 import { Cone } from './cone.js';
 
 
