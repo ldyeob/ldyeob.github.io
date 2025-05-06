@@ -84,13 +84,13 @@ function setupKeyboardEvents() {
             else {
                 arcBallMode = 'CAMERA';
             }
-            updateText(textOverlay, "arcball mode: " + arcBallMode);
+            updateText(textOverlay1, "arcball mode: " + arcBallMode);
         }
         else if (event.key == 'r') {
             arcball.reset();
             modelMatrix = mat4.create(); 
             arcBallMode = 'CAMERA';
-            updateText(textOverlay, "arcball mode: " + arcBallMode);
+            updateText(textOverlay1, "arcball mode: " + arcBallMode);
         }
         else if (event.key == 's') {
             cone.copyVertexNormalsToNormals();
